@@ -54,7 +54,7 @@ def monitor_application():
             print('Application is running successfully!')
         else:
             print('Application Down. Fix it!')
-            msg = f'Application returned {response.status_code}'
+            msg = f'Your Nginx server is down, get to work and fix it !!'
             send_notification(msg)
             restart_container()
     except Exception as ex:
